@@ -18,3 +18,25 @@ alphabets. In BdSL, there are 38 different letter signs. In this study, we compa
 
 will verify the metrics later
 - https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+
+## load a model and test the accuracy
+
+```py
+
+device = torch.device("cuda")
+model = models.vgg16(pretrained=True)
+for param in model.parameters():
+  param.requires_grad = True
+  
+num_ftrs = model.classifier[0].in_features
+model.classifier = nn.Linear(num_ftrs,38)
+# model_vgg = model_vgg.to(device)
+
+model.load_state_dict(torch.load('BSL_Vgg16.pt'))
+model.to(device)
+
+
+model_vgg=model
+predictions_list, labels_list = measure_test_acc(model_vgg)
+
+```
