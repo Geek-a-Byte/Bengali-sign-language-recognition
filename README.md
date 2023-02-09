@@ -31,4 +31,5 @@ predictions_list, labels_list = measure_test_acc(model_vgg)
 
 ```
 
-
+### resources
+- https://christianbernecker.medium.com/how-to-create-a-confusion-matrix-in-pytorch-38d06a7f04b7
