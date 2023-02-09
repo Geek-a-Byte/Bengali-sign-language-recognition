@@ -1,3 +1,5 @@
+## Abstract
+
 <pre>
 The sole form of communication available to the deaf and dumb (D&D) people is sign language. 
 Every day, the D&D community faces challenges while attempting to communicate with the general public. 
@@ -13,7 +15,7 @@ alphabets. In BdSL, there are 38 different letter signs. In this study, we compa
 96.57%, 95.13%, 92.82%, 95.52%, 96.31% respectively.
 </pre>
 
-## ``pre-trained models used``
+## pre-trained models used
 ![image](https://user-images.githubusercontent.com/59027621/205045598-a598e2f5-092a-41de-baf7-331412923a66.png)
 
 will verify the metrics later
