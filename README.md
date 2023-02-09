@@ -15,11 +15,13 @@ alphabets. In BdSL, there are 38 different letter signs. In this study, we compa
 96.57%, 95.13%, 92.82%, 95.52%, 96.31% respectively.
 </pre>
 
-## pre-trained models used
-![image](https://user-images.githubusercontent.com/59027621/205045598-a598e2f5-092a-41de-baf7-331412923a66.png)
-
-will verify the metrics later
-- https://towardsdatascience.com/multi-class-metrics-made-simple-part-ii-the-f1-score-ebe8b2c2ca1
+| Pre-trained Model Name | loss function    | optimizer | learning rate | step_size | gamma | no of epochs | Best epoch acc | training time | test_accuracy | precision | recall | f1-score |
+| ---------------------- | ---------------- | --------- | ------------- | --------- | ----- | ------------ | -------------- | ------------- | ------------- | --------- | ------ | -------- |
+| densenet121            | CrossEntropyLoss | SGD       | 0.006         | 3         | 0.1   | 5            | 0.963158       | 10m 45s       | 96.3158       | 96.48     | 96.32  | 96.31    |
+| Resnet50               | CrossEntropyLoss | SGD       | 0.006         | 3         | 0.1   | 5            | 0.960526       | 10m 1s        | 96.0526       | 96.37     | 96.05  | 96.02    |
+| mobilenet_v2           | CrossEntropyLoss | SGD       | 0.006         | 3         | 0.1   | 5            | 0.954605       | 4m 11s        | 95.4605       | 95.76     | 95.46  | 95.45    |
+| vgg16                  | CrossEntropyLoss | SGD       | 0.001         | 7         | 0.1   | 5            | 0.942763       | 13m 12s       | 94.2763       | 94.67     | 94.28  | 94.28    |
+| Mobilenet_V3_small     | CrossEntropyLoss | SGD       | 0.006         | 3         | 0.1   | 5            | 0.929605       | 2m 41s        | 92.9605       | 93.58     | 92.96  | 93.02    |
 
 ## load a model and test the accuracy
 
